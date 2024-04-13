@@ -14,3 +14,5 @@ In this methodology:
 6. **Plotting:** We plot the number of threads against the corresponding time taken using `matplotlib.pyplot.plot()` and display the plot.
 
 **Observation:** The time taken is minimum when the number of threads is 8, which is expected since there are 8 cores on my laptop.
+<img src="![Result](https://github.com/Kanishhkka/Multithread-102103772/assets/107942421/9c2c8618-08bc-4d5d-952f-055171a1a390)
+">
