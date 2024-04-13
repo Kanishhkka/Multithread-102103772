@@ -1,4 +1,6 @@
 # Multithread-102103772
+**Google Colab: **
+<a href="https://colab.research.google.com/drive/1bnK8x4ZfO82qIXPiYSCCyvNtCltjdvJQ?usp=sharing">Click Here</a><br>
 In this methodology:
 
 1. **Matrix Multiplication Function:** We define `matrix_multiply()` to multiply two matrices using `np.dot()`. The result is stored at a specific index in the result array.
@@ -14,5 +16,5 @@ In this methodology:
 6. **Plotting:** We plot the number of threads against the corresponding time taken using `matplotlib.pyplot.plot()` and display the plot.
 
 **Observation:** The time taken is minimum when the number of threads is 8, which is expected since there are 8 cores on my laptop.
-<img src="![Result](https://github.com/Kanishhkka/Multithread-102103772/assets/107942421/9c2c8618-08bc-4d5d-952f-055171a1a390)
-">
+A dashboard is created using **ipywidgets** with various refresh rates generating random matrices.
+<img src="https://github.com/Kanishhkka/Multithread-102103772/blob/main/Result.png">
