@@ -1,20 +1,16 @@
 # Multithread-102103772
-## *METHODOLOGY:*
+In this methodology:
 
-1. **Function for matrix multiplication:**  matrix_multiply() is defined to perform matrix multiplication of two matrices (A and B) using np.dot(). It stores the answer at the specific index of result array.
+1. **Matrix Multiplication Function:** We define `matrix_multiply()` to multiply two matrices using `np.dot()`. The result is stored at a specific index in the result array.
 
-2. **Function for multiplication using threads:**  run_with_threads() is defined to perform matrix multiplication with a specified number of threads.
-It first initializes a list threads to store the thread objects.
-Then, it iterates over the list of matrices and creates a new thread for each matrix multiplication operation using threading.Thread() constructor.
-Each thread is started using the start() method. After creating all threads, it waits for all threads to complete using the join() method. The function returns the time taken for the multiplication operations.
+2. **Multithreading Function:** `run_with_threads()` performs matrix multiplication using a specified number of threads. It creates threads for each matrix multiplication operation, starts them, and waits for them to complete. Then, it returns the time taken.
 
-3. **Matrices Definition:** The constant matrix A of size 1000x1000 is generated using numpy.random.rand(). A list of 100 random matricesof the same size is created.
+3. **Matrix Definitions:** We generate a constant matrix `A` and a list of 100 random matrices.
 
-4. **Execution:** run_with_threads() function is called for each number of threads in the range from 1 to 10, and the time taken for each operation is recorded. The results are stored in the results_table list, along with the corresponding number of threads.
+4. **Execution:** We call `run_with_threads()` for each number of threads from 1 to 10, recording the time taken for each operation in `results_table`.
 
-5. **Results:** The results are displayed in a table format using the tabulate() function.
+5. **Results:** The results are displayed in a table format using `tabulate()`.
 
-6. **Plotting:** The number of threads and the corresponding time taken are plotted using matplotlib.pyplot.plot() and plot is displayed using plt.show().
+6. **Plotting:** We plot the number of threads against the corresponding time taken using `matplotlib.pyplot.plot()` and display the plot.
 
-### *OBSERVATIONS:*
-The time taken is minimum for number of threads= 8 which is justified as there are 8 cores on my laptop.
+**Observation:** The time taken is minimum when the number of threads is 8, which is expected since there are 8 cores on my laptop.
