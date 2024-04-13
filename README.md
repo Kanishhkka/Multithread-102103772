@@ -1,5 +1,5 @@
 # Multithread-102103772
-**Google Colab: **
+**Google Colab:**
 <a href="https://colab.research.google.com/drive/1bnK8x4ZfO82qIXPiYSCCyvNtCltjdvJQ?usp=sharing">Click Here</a><br>
 In this methodology:
 
